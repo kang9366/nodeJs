@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #btnToggle{
+            background-color: yellow;
+            padding: 10px 0 10px 0;
+            text-align: center;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        $(document).ready(function (){
+            $('#btnToggle').on('click', function (){
+                $("#marker").fadeToggle("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="btnToggle">눌러주세요</div>
+    <img id='marker' style='width: 200px; margin: 10px'
+        src = "https://t1.daumcdn.net/liveboard/holapet/0e5f90af436e4c218343073164a5f657.JPG">
+</body>
+</html>
